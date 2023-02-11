@@ -13,6 +13,12 @@
 		3DA7557729971D3C009FF888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA7557529971D3C009FF888 /* Main.storyboard */; };
 		3DA7557929971D3E009FF888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA7557829971D3E009FF888 /* Assets.xcassets */; };
 		3DA7557C29971D3E009FF888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA7557A29971D3E009FF888 /* LaunchScreen.storyboard */; };
+		3DA7558429971DD0009FF888 /* song.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3DA7558329971DCF009FF888 /* song.gif */; };
+		3DA7558829971FBE009FF888 /* UIImageAnimatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA7558629971FBE009FF888 /* UIImageAnimatedGIF.m */; };
+		3DA7558B2997282D009FF888 /* SwiftySound in Frameworks */ = {isa = PBXBuildFile; productRef = 3DA7558A2997282D009FF888 /* SwiftySound */; };
+		3DA7558D29972B17009FF888 /* MUSIC3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DA7558C29972B17009FF888 /* MUSIC3.mp3 */; };
+		3DA7558F29972F3B009FF888 /* cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3DA7558E29972F3B009FF888 /* cat.wav */; };
+		3DA755922997307C009FF888 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA755912997307C009FF888 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,13 @@
 		3DA7557829971D3E009FF888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DA7557B29971D3E009FF888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DA7557D29971D3E009FF888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DA7558329971DCF009FF888 /* song.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = song.gif; sourceTree = "<group>"; };
+		3DA7558529971FBE009FF888 /* Sound-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sound-Bridging-Header.h"; sourceTree = "<group>"; };
+		3DA7558629971FBE009FF888 /* UIImageAnimatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageAnimatedGIF.m; sourceTree = "<group>"; };
+		3DA7558729971FBE009FF888 /* UIImageAnimatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageAnimatedGIF.h; sourceTree = "<group>"; };
+		3DA7558C29972B17009FF888 /* MUSIC3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MUSIC3.mp3; sourceTree = "<group>"; };
+		3DA7558E29972F3B009FF888 /* cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cat.wav; sourceTree = "<group>"; };
+		3DA755912997307C009FF888 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA755922997307C009FF888 /* AVFoundation.framework in Frameworks */,
+				3DA7558B2997282D009FF888 /* SwiftySound in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,7 @@
 			children = (
 				3DA7556E29971D3C009FF888 /* Sound */,
 				3DA7556D29971D3C009FF888 /* Products */,
+				3DA755902997307B009FF888 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +74,27 @@
 			children = (
 				3DA7556F29971D3C009FF888 /* AppDelegate.swift */,
 				3DA7557129971D3C009FF888 /* SceneDelegate.swift */,
+				3DA7558C29972B17009FF888 /* MUSIC3.mp3 */,
+				3DA7558E29972F3B009FF888 /* cat.wav */,
 				3DA7557329971D3C009FF888 /* ViewController.swift */,
+				3DA7558329971DCF009FF888 /* song.gif */,
+				3DA7558729971FBE009FF888 /* UIImageAnimatedGIF.h */,
+				3DA7558629971FBE009FF888 /* UIImageAnimatedGIF.m */,
 				3DA7557529971D3C009FF888 /* Main.storyboard */,
 				3DA7557829971D3E009FF888 /* Assets.xcassets */,
 				3DA7557A29971D3E009FF888 /* LaunchScreen.storyboard */,
 				3DA7557D29971D3E009FF888 /* Info.plist */,
+				3DA7558529971FBE009FF888 /* Sound-Bridging-Header.h */,
 			);
 			path = Sound;
+			sourceTree = "<group>";
+		};
+		3DA755902997307B009FF888 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DA755912997307C009FF888 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +113,9 @@
 			dependencies = (
 			);
 			name = Sound;
+			packageProductDependencies = (
+				3DA7558A2997282D009FF888 /* SwiftySound */,
+			);
 			productName = Sound;
 			productReference = 3DA7556C29971D3C009FF888 /* Sound.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +132,7 @@
 				TargetAttributes = {
 					3DA7556B29971D3C009FF888 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -111,6 +145,9 @@
 				Base,
 			);
 			mainGroup = 3DA7556329971D3B009FF888;
+			packageReferences = (
+				3DA755892997282D009FF888 /* XCRemoteSwiftPackageReference "SwiftySound" */,
+			);
 			productRefGroup = 3DA7556D29971D3C009FF888 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +164,10 @@
 			files = (
 				3DA7557C29971D3E009FF888 /* LaunchScreen.storyboard in Resources */,
 				3DA7557929971D3E009FF888 /* Assets.xcassets in Resources */,
+				3DA7558D29972B17009FF888 /* MUSIC3.mp3 in Resources */,
+				3DA7558F29972F3B009FF888 /* cat.wav in Resources */,
 				3DA7557729971D3C009FF888 /* Main.storyboard in Resources */,
+				3DA7558429971DD0009FF888 /* song.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DA7557429971D3C009FF888 /* ViewController.swift in Sources */,
+				3DA7558829971FBE009FF888 /* UIImageAnimatedGIF.m in Sources */,
 				3DA7557029971D3C009FF888 /* AppDelegate.swift in Sources */,
 				3DA7557229971D3C009FF888 /* SceneDelegate.swift in Sources */,
 			);
@@ -285,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = E9KS5E39JS;
@@ -295,14 +337,17 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.janzelaznog.Sound;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janzelaznog.BackgroundContent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sound/Sound-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = E9KS5E39JS;
@@ -323,14 +369,16 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.janzelaznog.Sound;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janzelaznog.BackgroundContent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sound/Sound-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -358,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DA755892997282D009FF888 /* XCRemoteSwiftPackageReference "SwiftySound" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamcichy/SwiftySound.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DA7558A2997282D009FF888 /* SwiftySound */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DA755892997282D009FF888 /* XCRemoteSwiftPackageReference "SwiftySound" */;
+			productName = SwiftySound;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3DA7556429971D3B009FF888 /* Project object */;
 }
